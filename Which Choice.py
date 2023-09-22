@@ -7,7 +7,7 @@ locale.setlocale(locale.LC_ALL, '')
 filepath = 'C:/Users/marce/Documents/Python/'
 
 # READ IN DATA
-adv = pd.read_excel('C:/Users/marce/Documents/Python/SWD/Which Would You Choose/Quarterly Advertising.xlsx',
+adv = pd.read_excel(filepath + 'SWD/Which Would You Choose/Quarterly Advertising.xlsx',
                     sheet_name='Original Data')
 adv['diff'] = adv['Q3Spend'] - adv['Q2Spend']
 
